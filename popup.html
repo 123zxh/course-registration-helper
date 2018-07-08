@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Registration Helper</title>
+        <link rel="stylesheet" type="text/css" href="popup.css">
+    </head>
+    <body>
+        <ul id="course_ul" style="list-style: none; margin: 0; padding: 3px; margin-bottom: 10px; border: 2px solid #336774; color: #336774">
+        </ul>
+        <form style="border: 2px solid #336774; padding: 3px", autocomplete="off">
+            <label>Course Code:</label><br/>
+            <input id="course_code" placeholder="e.g. CS374"><br/>
+            <label>CRN:</label><br/>
+            <input id="crn" placeholder="e.g. 66445"><br/>
+            <div id="err_msg1" style="display: none; color: tomato;">Both course code and crn are required.</div>
+            <div id="err_msg2" style="display: none; color: tomato;">The course code or the crn is invalid.</div>
+            <button id="btn_submit" type="submit" class="btn btn-primary" style="margin-top: 2px">Add Class</button>
+        </form>
+        <button id="clear_storage" type="button" style="margin-top: 5px">Clear Course List</button>
+        <script src="popup.js"></script>
+    </body>
+</html>

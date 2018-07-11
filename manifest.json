@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Registration Helper",
-  "version": "1.0",
-  "description": "This is a course registration helper for UI students. (Icon credit to: https://www.flaticon.com/free-icon/books-stack-of-three_29302)",
+  "version": "1.1",
+  "description": "This is a course registration helper for UI students. Icon credit to: https://www.flaticon.com/free-icon/books-stack-of-three_29302",
   "icons": {
     "16": "images/books-stack-of-three16.png",
     "32": "images/books-stack-of-three32.png",

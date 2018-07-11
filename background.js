@@ -1,4 +1,4 @@
-const updateInterval = 1; // in minutes
+const updateInterval = 3; // in minutes
 
 function splitCourseCode(courseCode) {
   let subjectCodeMatch = courseCode.match(/\D/g);
@@ -29,7 +29,7 @@ let timerId = setInterval(() => {
             let new_course_list = [...result.course_list.slice(0, idx), [courseCode, crn, enrollmentStatus], ...result.course_list.slice(idx+1)];
             chrome.storage.sync.set({
               course_list: new_course_list
-            });
+            }, () => console.log('Course list is updating.'));
             if (prevEnrollmentStatus == 'Closed' && enrollmentStatus != 'Closed') {
               // notification
               chrome.notifications.clear('course open');
